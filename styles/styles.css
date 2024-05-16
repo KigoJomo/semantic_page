@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold, html body header .logo {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+:root {
+  --primary-color: #333;
+  --secondary-color: #fff;
+  --accent-color: #007bff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: var(--primary-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+a {
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+a {
+  transition: all 0.3s ease;
+}
+a:hover {
+  color: var(--accent-color);
+}
+
+.row, html body footer, html body header nav .nav-links, html body header nav, html body header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.column, html body main section, html body header nav .hamburger-menu, html body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 24px;
+}
+
+html {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+html body {
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 100dvh;
+  width: 100%;
+  padding-top: 7dvh;
+  gap: 0;
+  position: relative;
+}
+html body header {
+  position: fixed;
+  top: 0;
+  min-height: 7dvh;
+  width: 100%;
+  padding: 0 24px;
+  justify-content: space-between;
+  background-color: var(--secondary-color);
+  box-shadow: 0px 1px 5px 0px rgba(43, 43, 43, 0.3490196078);
+}
+html body header .logo {
+  font-size: 1.25rem;
+}
+html body header nav {
+  height: 100%;
+}
+html body header nav .nav-links {
+  height: 100%;
+  gap: 48px;
+  list-style-type: none;
+}
+html body header nav .hamburger-menu {
+  display: none;
+  gap: 2px;
+  cursor: pointer;
+}
+html body header nav .hamburger-menu .bar {
+  width: 16px;
+  height: 2px;
+  border-radius: 4px;
+  background-color: var(--primary-color);
+}
+@media (max-width: 768px) {
+  html body header nav .nav-links {
+    position: absolute;
+    top: 100%;
+    right: -54vw;
+    height: 100vh;
+    width: 50vw;
+    padding: 96px 32px;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: var(--secondary-color);
+    box-shadow: -2px 4px 5px 0px rgba(43, 43, 43, 0.3490196078);
+    transition: all 0.3s ease;
+  }
+  html body header nav .nav-links li {
+    width: 100%;
+  }
+  html body header nav .nav-links li a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  html body header nav .show {
+    right: 0;
+  }
+  html body header nav .hamburger-menu {
+    display: flex;
+  }
+}
+html body main {
+  width: 100%;
+  min-height: 86dvh;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+html body main section {
+  width: 100%;
+  height: 86dvh;
+  justify-content: center;
+  align-items: center;
+}
+html body footer {
+  position: static;
+  min-height: 7dvh;
+  width: 100%;
+  justify-content: center;
+  border-top: 1px solid var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+}
